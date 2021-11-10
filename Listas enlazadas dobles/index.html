@@ -1,0 +1,117 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Estructura de Datos </title>
+</head>
+
+<body>
+    <h1>Inventary</h1>
+    <div class="flex">
+        <div class="container">
+            <div class="mr">
+                <h2>Add Article</h2>
+                <input name="code" placeholder="Code" type="number" id="Code" />
+            </div>
+            <div class="mr">
+                <input name="name" placeholder="Name" type="text" id="Name" />
+            </div>
+            <div class="mr">
+                <input name="quantity" type="number" placeholder="Quantity" id="Quantity" />
+            </div>
+
+            <div class="mr">
+                <input name="cost" type="number" placeholder="Cost" id="Cost" />
+            </div>
+            <div class="mr">
+                <label>Insert<input type="checkbox" id="checkboxInsert"></label>
+            </div>
+            <div class="mr" id="divinsert"></div>
+            <div class="mr">
+                <button id="btnAdd">Add</button>
+            </div>
+            <div class="mr">
+                <button id="btnDelete">Delete</button>
+            </div>
+            <div class="mr">
+                <button id="btnSearch">Search</button>
+                <button id="btnClean">Clean</button>
+            </div>
+            <div class="mr">
+                <button id="btnList">List</button>
+                <button id="btnInvertedList">invertedList</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="mr">
+                <h2>Info. del artículo</h2>
+                <table name="infoarticulo" id="infoarticulo">
+                    <tbody>
+                        <tr>
+                            <td>Product</td>
+                        </tr>
+                        <tr>
+                            <td>Code</td>
+                            <td id="tableCode">----</td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td id="tableName">----</td>
+                        </tr>
+                        <tr>
+                            <td>Quantity</td>
+                            <td id="tableQuantity">----</td>
+                        </tr>
+                        <tr>
+                            <td>Cost</td>
+                            <td id="tableCost">----</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td id="tabletotal">----</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="container">
+            <div class="mr">
+                <h2>List</h2>
+                <table name="list" id="list">
+                    <tr>
+                        <td>Code</td>
+                        <td>Name</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="container">
+            <div class="mr">
+                <h2>Inverted List</h2>
+                </table>
+                <table name="invertedList" id="invertedList">
+                    <tr>
+                        <td>Code</td>
+                        <td>Name</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="container">
+            <div class="mr">
+                <h2>History</h2>
+                </table>
+                <table name="History" id="history">
+                    <tr>
+                        <td>Acción</td>
+                        <td>Code</td>
+                        <td>Name</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./main.js" type="module"></script>
+
+</html>
